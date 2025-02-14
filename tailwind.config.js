@@ -14,9 +14,11 @@ export default {
 		},
 		extend: {
 			colors: {
-				background: "#F0EBEB",
-				gray1: "#343434",
-				gray2: "#666666",
+				background: "#FFF9EF",
+				black: "#060501",
+				green: "#4E9471",
+				orange: "#F07032",
+				yellow_light: "#FDECCA",
 			},
 			borderRadius: {
 				4: "4px",

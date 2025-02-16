@@ -365,11 +365,7 @@ const addAosAnimate = computed(() => (i: number, animate: string, outAnimate: st
 									type="button"
 									class="opacity-70 group-hover:opacity-100 transition duration-500 center"
 								>
-									<span
-										class="animate-[floatCircle_4s_linear] animate-infinite block text-white tracking-0.2 text-14 font-black"
-									>
-										VIEW MORE
-									</span>
+									<span class="block text-white tracking-0.2 text-14 font-black"> VIEW MORE </span>
 								</button>
 								<!-- <img class="object-contain w-full" src="~/assets/images/work1-2.jpg" /> -->
 								<span

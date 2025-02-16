@@ -326,7 +326,7 @@ const addAosAnimate = computed(() => (i: number, animate: string, outAnimate: st
 										:list="['NUXT.JS', 'VUE.JS', 'FIGMA']"
 									/>
 								</div>
-								<div class="flex flex-col gap-y-4 lg:pb-12 lg:pr-[5%] z-10">
+								<div class="flex flex-col gap-y-4 lg:pb-12 lg:pr-[5%] lg:z-10">
 									<span
 										class="absolute top-[5%] -left-[12%] max-lg:hidden bottom-0 right-0 bg-[url(/assets/bg/3-2.png)] bg-full bg-no-repeat"
 										data-swiper-parallax-x="20%"
@@ -363,7 +363,7 @@ const addAosAnimate = computed(() => (i: number, animate: string, outAnimate: st
 								></span>
 								<button
 									type="button"
-									class="z-10 opacity-70 group-hover:opacity-100 transition duration-500 center"
+									class="opacity-70 group-hover:opacity-100 transition duration-500 center"
 								>
 									<span
 										class="animate-[floatCircle_4s_linear] animate-infinite block text-white tracking-0.2 text-14 font-black"
@@ -373,7 +373,7 @@ const addAosAnimate = computed(() => (i: number, animate: string, outAnimate: st
 								</button>
 								<!-- <img class="object-contain w-full" src="~/assets/images/work1-2.jpg" /> -->
 								<span
-									class="z-10 tracking-0.15 text-white text-12 font-medium absolute left-1/2 -translate-x-1/2 md:translate-x-0 whitespace-nowrap md:left-[10%] bottom-[5%] group-hover:opacity-30 transition duration-500 opacity-80 max-sm:scale-75"
+									class="tracking-0.15 text-white text-12 font-medium absolute left-1/2 -translate-x-1/2 md:translate-x-0 whitespace-nowrap md:left-[10%] bottom-[5%] group-hover:opacity-30 transition duration-500 opacity-80 max-sm:scale-75"
 									>展示網頁由後台建構/他人設計</span
 								>
 							</a>

@@ -138,7 +138,8 @@ const addAosAnimate = computed(() => (i: number, animate: string, outAnimate: st
 				ref="containerRef"
 				:direction="'vertical'"
 				:slidesPerView="1"
-				:speed="2000"
+				:speed="1000"
+				:touchReleaseOnEdges="true"
 				:mousewheel="true"
 				:parallax="true"
 				:init="false"
@@ -165,7 +166,7 @@ const addAosAnimate = computed(() => (i: number, animate: string, outAnimate: st
 						class="flex flex-col gap-y-12 max-sm:-translate-y-2/3 max-sm:-translate-x-1/2 center items-center"
 					>
 						<h1
-							class="font-bold text-black text-28 text-center animate-both"
+							class="font-bold text-black text-28 text-center animate-both whitespace-nowrap"
 							:class="
 								addAosAnimate(
 									1,
@@ -177,7 +178,7 @@ const addAosAnimate = computed(() => (i: number, animate: string, outAnimate: st
 							我是林孟昕
 						</h1>
 						<span
-							class="text-black track-0.1 text-center text-nowrap animate-both"
+							class="text-black track-0.1 text-center text-nowrap animate-both whitespace-nowrap"
 							:class="
 								addAosAnimate(
 									1,
@@ -395,7 +396,7 @@ const addAosAnimate = computed(() => (i: number, animate: string, outAnimate: st
 						class="container center flex max-sm:flex-col justify-center h-[calc(70vh-100px)] items-center gap-y-10"
 					>
 						<div
-							class="max-lg:hidden absolute w-8/12 xl:w-7/12 xl:translate-x-[15%] left-0 top-0 translate-y-[15%]"
+							class="max-lg:hidden absolute w-8/12 xl:w-7/12 xl:translate-x-[15%] left-0 top-0 translate-y-[15%] pointer-events-none"
 						>
 							<img
 								src="/assets/bg/4-1.png"
@@ -451,7 +452,7 @@ const addAosAnimate = computed(() => (i: number, animate: string, outAnimate: st
 							<a href="" class="group w-1/2 z-10 sm:-translate-y-[5%]">
 								<img
 									src="@/assets/images/work2-3.png "
-									class="object-full group-hover:scale-105 transition duration-500 h-full"
+									class="object-contain group-hover:scale-105 transition duration-500 h-full"
 									alt=""
 								/>
 								<span
@@ -473,7 +474,7 @@ const addAosAnimate = computed(() => (i: number, animate: string, outAnimate: st
 							>
 								<img
 									src="@/assets/images/work2-2.png "
-									class="object-full group-hover:scale-105 transition duration-500 h-full"
+									class="object-contain group-hover:scale-105 transition duration-500 h-full"
 									alt=""
 								/>
 								<span
@@ -527,7 +528,7 @@ const addAosAnimate = computed(() => (i: number, animate: string, outAnimate: st
 						<div
 							class="inline-flex w-full flex-col items-center justify-center py-[10%] md:py-[5%] sm:px-[10%] md:px-[8%] top-0 left-0"
 						>
-							<div class="absolute top-0 bottom-0 -left-[5%] -right-[5%]">
+							<div class="absolute top-0 bottom-0 -left-[5%] -right-[5%] max-sm:hidden">
 								<div class="absolute right-[30%] top-[10%]">
 									<i5-decoration class="text-[80px]" data-swiper-parallax-y="-40"></i5-decoration>
 								</div>

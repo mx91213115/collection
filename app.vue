@@ -129,7 +129,7 @@ const addAosAnimate = computed(() => (i: number, animate: string, outAnimate: st
 		<transition name="fade">
 			<span
 				v-if="setTime"
-				class="text-black text-12 tracking-0.15 font-bold px-9 py-2 fixed top-16 left-0 z-10 bg-[url(/assets/bg/tag.png)] bg-full bg-no-repeat"
+				class="text-black text-12 tracking-0.15 font-bold px-9 py-2 fixed top-16 max-sm:-right-2 sm:left-0 z-10 bg-[url(/assets/bg/tag.png)] bg-full bg-no-repeat"
 				>{{ setTime }}</span
 			>
 		</transition>
@@ -144,6 +144,11 @@ const addAosAnimate = computed(() => (i: number, animate: string, outAnimate: st
 				:parallax="true"
 				:init="false"
 				:modules="[Mousewheel]"
+				:breakpoints="{
+					640: {
+						speed: 2000,
+					},
+				}"
 				class="w-full h-screen"
 			>
 				<!-- #region  首頁-->
@@ -207,7 +212,7 @@ const addAosAnimate = computed(() => (i: number, animate: string, outAnimate: st
 				<!-- #endregion  首頁-->
 
 				<!-- #region  軟體 -->
-				<swiper-slide class="">
+				<swiper-slide class="bg-background">
 					<div
 						class="h-[200vh] xl:h-[250vh] w-11/12 absolute top-1/2 left-0 -translate-y-[80vh] xl:-translate-y-[105vh] pointer-events-none"
 					>
@@ -275,7 +280,7 @@ const addAosAnimate = computed(() => (i: number, animate: string, outAnimate: st
 				</swiper-slide>
 				<!-- #endregion  軟體-->
 				<!-- #region  WYSIWYG-->
-				<swiper-slide class="z-10">
+				<swiper-slide class="">
 					<div class="container center max-sm:h-[calc(70vh-100px)]">
 						<!-- :class="[addAosAnimate(3)]" -->
 						<!-- data-aos="fade-up" -->
@@ -661,6 +666,9 @@ const addAosAnimate = computed(() => (i: number, animate: string, outAnimate: st
 .fade-enter-from,
 .fade-leave-to {
 	transform: translate(-100%, 0);
+	@media (width < 640px) {
+		transform: translate(100%, 0);
+	}
 	opacity: 0;
 }
 

@@ -350,7 +350,7 @@ const addAosAnimate = computed(() => (i: number, animate: string, outAnimate: st
 							</div>
 							<a
 								href="https://www.sheng-dong.com.tw/activity/2023TILF"
-								class="w-full after:absolute after:top-0 after:left-0 after:right-0 after:bottom-0 after:bg-black after:opacity-80 after:sm:opacity-40 after:transition after:duration-500 hover:after:opacity-80 group rounded-[100px] overflow-hidden lg:-translate-x-6 xl:-translate-x-10 sm:aspect-[2/0.9] max-sm:h-full"
+								class="w-full group rounded-[100px] overflow-hidden lg:-translate-x-6 xl:-translate-x-10 sm:aspect-[2/0.9] max-sm:h-full"
 								target="_blank"
 							>
 								<iframe
@@ -358,6 +358,9 @@ const addAosAnimate = computed(() => (i: number, animate: string, outAnimate: st
 									src="https://www.sheng-dong.com.tw/activity/2023TILF"
 									frameborder="0"
 								></iframe>
+								<span
+									class="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-80 sm:opacity-40 transition duration-500 group-hover:opacity-80 pointer-events-none"
+								></span>
 								<button
 									type="button"
 									class="z-10 opacity-70 group-hover:opacity-100 transition duration-500 center"
